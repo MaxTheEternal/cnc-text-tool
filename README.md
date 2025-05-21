@@ -1,6 +1,8 @@
 # CNC Hershey Font (Single Line Font) Tool
 
-[View the Tool here](https://msurguy.github.io/cnc-text-tool/)
+[View the original Tool here](https://msurguy.github.io/cnc-text-tool/)
+
+This is a fork of a Project from Maks Surguy, I just modiefied it in a way that enables my mother to design ribbons with it.
 
 This browser-based tool enables you to quickly create single line text for plotters, laser engraving, CNC Mills or other computerized machines. The tool doesn't need any software to be installed and makes it quick to experiment with various single line fonts to get the best result. 
 
