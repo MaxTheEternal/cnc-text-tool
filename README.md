@@ -2,11 +2,13 @@
 
 [View the original Tool here](https://msurguy.github.io/cnc-text-tool/)
 
-This is a fork of a Project from Maks Surguy, I just modiefied it in a way that enables my mother to design ribbons with it.
+This is a fork of a Project from Maks Surguy.
+I just modiefied it in a way that enables my mother to design ribbons with it.
+Specifically I just added a way to resize the Canvas and translated it to german.
 
-This browser-based tool enables you to quickly create single line text for plotters, laser engraving, CNC Mills or other computerized machines. The tool doesn't need any software to be installed and makes it quick to experiment with various single line fonts to get the best result. 
+This browser-based tool enables you to quickly create single line text for plotters, laser engraving, CNC Mills or other computerized machines. The tool doesn't need any software to be installed and makes it quick to experiment with various single line fonts to get the best result.
 
-This tool was made by Maks Surguy, creator of [Drawingbots.net](https://drawingbots.net/) and [Plotterfiles.com](https://plotterfiles.com/). 
+This tool was made by Maks Surguy, creator of [Drawingbots.net](https://drawingbots.net/) and [Plotterfiles.com](https://plotterfiles.com/).
 
 You can find more browser-based tools on https://drawingbots.net/knowledge/tools
 
@@ -19,26 +21,30 @@ The fonts that were used to make this tool come from the following sources:
 - http://cutlings.wasbo.net/products-fonts/
 - https://github.com/Shriinivas/inkscapestrokefont
 
-If you are downloading or thinking of redistributing the fonts, please consult with the original repositories for each of the fonts to understand respective licensing model. 
+If you are downloading or thinking of redistributing the fonts, please consult with the original repositories for each of the fonts to understand respective licensing model.
 
 ## Development
 
 ### Project install
+
 ```
 npm install
 ```
 
 ### Compiles and hot-reloads for development
+
 ```
 npm run serve
 ```
 
 ### Compiles and minifies for production
+
 ```
 npm run build
 ```
 
 ### Customize configuration
+
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## License

@@ -29,7 +29,7 @@
             <transition name="slide">
               <div v-if="source.svg">
                 <text-area-input
-                  label="Input Text"
+                  label="Text"
                   @reset="resetTextInput"
                   :value="text"
                   @input="updateText"
@@ -44,13 +44,13 @@
                   @secondInput="moveOverlayY"
                 ></double-text-input>
                 <select-field
-                  label="Font"
+                  label="Schriftart"
                   v-model="font.selected"
                   :footerLink="font.originalURL"
                   :options="fontOptions"
                 ></select-field>
                 <select-field
-                  label="Alignment"
+                  label="Ausrichtung"
                   v-model="font.alignment"
                   :options="fontAlignmentOptions"
                 ></select-field>
@@ -58,37 +58,35 @@
                   :min="10"
                   :max="150"
                   :step="1"
-                  label="Font Size"
+                  label="Schriftgröße"
                   v-model.number="font.sizeInPixels"
                 ></slider>
                 <slider
                   :min="0"
                   :max="10"
                   :step="0.1"
-                  label="Character Spacing"
+                  label="Zeichen-Abstand"
                   v-model.number="font.characterSpacing"
                 ></slider>
                 <slider
                   :min="0.5"
                   :max="3"
                   :step="0.1"
-                  label="Line Height"
+                  label="Zeilen-Abstand"
                   v-model.number="font.lineHeight"
                 ></slider>
                 <slider
                   :min="-360"
                   :max="360"
                   :step="1"
-                  label="Rotation"
+                  label="Drehung"
                   v-model.number="overlay.rotation"
                 ></slider>
-                <toggle label="Black / White" v-model="font.color"></toggle>
-
                 <slider
                   :min="1"
                   :max="100"
                   :step="0.1"
-                  label="Canvas Width (cm)"
+                  label="Breite (cm)"
                   v-model.number="canvas.widthCm"
                   @input="updateCanvasSize"
                 />
@@ -97,7 +95,7 @@
                   :min="1"
                   :max="100"
                   :step="0.1"
-                  label="Canvas Height (cm)"
+                  label="Höhe (cm)"
                   v-model.number="canvas.heightCm"
                   @input="updateCanvasSize"
                 />
@@ -127,7 +125,6 @@
 <script>
 import bsCustomFileInput from "bs-custom-file-input";
 
-import Toggle from "@/components/Toggle";
 import SelectField from "@/components/SelectField";
 import Slider from "@/components/Slider";
 // import ButtonGroup from "@/components/ButtonGroup";
@@ -149,7 +146,6 @@ import debounce from "lodash.debounce";
 export default {
   name: "HelloWorld",
   components: {
-    Toggle,
     SelectField,
     Slider,
     TextAreaInput,
